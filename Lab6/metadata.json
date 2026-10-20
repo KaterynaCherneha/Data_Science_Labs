@@ -1,0 +1,17 @@
+{
+    "variant": 4,
+    "seed": 42,
+    "tf_version": "2.21.0",
+    "features_order": [
+        "cylinders",
+        "displacement",
+        "horsepower",
+        "weight",
+        "acceleration",
+        "model_year",
+        "origin"
+    ],
+    "train_size": 278,
+    "val_size": 60,
+    "test_size": 60
+}
