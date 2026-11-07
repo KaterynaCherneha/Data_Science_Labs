@@ -1,0 +1,5 @@
+Model,Change,Epochs,Test Accuracy,Test Precision,Test Recall,Test F1 (pos),Test Macro-F1,Test ROC AUC
+DummyClassifier,Базова (most_frequent),0,0.5176374077112387,0.0,0.0,0.0,0.3410810810810811,0.5
+LogisticRegression,Класична лінійна,0,1.0,1.0,1.0,1.0,1.0,1.0
+Базова нейромережа,Dense(32)->Dense(32),200,1.0,1.0,1.0,1.0,1.0,1.0
+Покращена нейромережа,Додано Dropout(0.1),76,1.0,1.0,1.0,1.0,1.0,1.0

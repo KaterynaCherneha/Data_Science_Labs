@@ -1,0 +1,56 @@
+{
+    "source": {
+        "name": "Mushroom Dataset",
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/agaricus-lepiota.data",
+        "file": "agaricus-lepiota.data"
+    },
+    "task": {
+        "target": "class (0-й стовпець)",
+        "units": "безрозмірна категорія (e/p)",
+        "type": "Бінарна класифікація",
+        "positive_class": "p (отруйний) -> 1",
+        "negative_class": "e (їстівний) -> 0"
+    },
+    "features": {
+        "order": [
+            "cap-shape",
+            "cap-surface",
+            "cap-color",
+            "bruises",
+            "odor",
+            "gill-attachment",
+            "gill-spacing",
+            "gill-size",
+            "gill-color",
+            "stalk-shape",
+            "stalk-root",
+            "stalk-surface-above-ring",
+            "stalk-surface-below-ring",
+            "stalk-color-above-ring",
+            "stalk-color-below-ring",
+            "veil-type",
+            "veil-color",
+            "ring-number",
+            "ring-type",
+            "spore-print-color",
+            "population",
+            "habitat"
+        ],
+        "categorical_encoded_shape": 116
+    },
+    "training": {
+        "seed": 42,
+        "split_indices": {
+            "train_size": 5686,
+            "val_size": 1219,
+            "test_size": 1219
+        },
+        "applied_change": "Додано Dropout(0.1) після прихованих шарів"
+    },
+    "package_versions": {
+        "tensorflow": "2.21.0",
+        "pandas": "2.3.3",
+        "scikit-learn": "1.7.2",
+        "joblib": "1.6.0"
+    }
+}
