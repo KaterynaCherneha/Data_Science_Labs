@@ -1,0 +1,16 @@
+{
+  "image_size": [
+    128,
+    128
+  ],
+  "color_mode": "rgb",
+  "interpolation": "bilinear",
+  "rescaling": "1./255 inside model (Rescaling layer)",
+  "class_names": [
+    "churros",
+    "hamburger",
+    "red_velvet_cake"
+  ],
+  "selected_model": "Змінена CNN (dropout=0.3)",
+  "seed": 42
+}
