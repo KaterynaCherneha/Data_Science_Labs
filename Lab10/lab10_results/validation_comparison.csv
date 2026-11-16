@@ -1,0 +1,3 @@
+stage,unfrozen_blocks,lr,params,epochs,val_loss,val_accuracy
+feature_extraction,None (лише Dense-голова),0.001,3843,10,0.0585,0.9866
+fine_tuning,"block7*, top_* (без BatchNorm)",1e-05,1125427,10,0.0449,0.9889

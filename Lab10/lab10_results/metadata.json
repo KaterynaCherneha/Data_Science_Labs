@@ -1,0 +1,48 @@
+{
+  "tensorflow": "2.21.0",
+  "keras": "3.12.4",
+  "seed": 42,
+  "class_names": [
+    "churros",
+    "hamburger",
+    "red_velvet_cake"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "pixel_range": [
+    0,
+    255
+  ],
+  "backbone": "EfficientNetB0",
+  "weights": "imagenet",
+  "selected_stage": "fine_tuning",
+  "comparison": [
+    {
+      "stage": "feature_extraction",
+      "unfrozen_blocks": "None (лише Dense-голова)",
+      "lr": 0.001,
+      "params": 3843,
+      "epochs": 10,
+      "val_loss": 0.0585,
+      "val_accuracy": 0.9866
+    },
+    {
+      "stage": "fine_tuning",
+      "unfrozen_blocks": "block7*, top_* (без BatchNorm)",
+      "lr": 1e-05,
+      "params": 1125427,
+      "epochs": 10,
+      "val_loss": 0.0449,
+      "val_accuracy": 0.9889
+    }
+  ],
+  "test_metrics": {
+    "loss": 0.0354,
+    "accuracy": 0.9853,
+    "macro_f1": 0.9853,
+    "errors_count": 11,
+    "total_test": 750
+  }
+}
